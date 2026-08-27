@@ -1,0 +1,101 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --breakpoint-xs: 540px;
+    --breakpoint-tablet: 860px;
+    --breakpoint-mid: 940px;
+    --breakpoint-laptop: 1100px;
+
+    --font-display: var(--display);
+    --font-body: var(--body);
+}
+
+
+:root {
+    --primary-dark: #161513;
+    --secondary-dark: #302d28;
+    --tertiary-dark: #163B2A;
+
+    --primary-light: #f5eee0;
+    --secondary-light: #f5e9d5;
+
+    --primary-accent-100: #C6A15B;
+    --primary-accent-200: #8C6B2E;
+    --secondary-accent: #606a49;
+    --tertiary-accent: #46512E;
+    --sandy-accent: #947950;
+    --sandy-accent-100: #bda279;
+
+    --text-dark: #161513;
+    --text-dark-muted: #4A463D;
+    --text-faint: #8A8474;
+    --text-light: #F7F2E7;
+    --text-light-muted: #C9C2AF;
+    --text-tertiary: #D9BA82;
+    --gradient-primary: linear-gradient(120deg,
+            #C7843B,
+            #F3BD68);
+
+    --display: 'Playfair Display', sans-serif;
+    --body: 'Inter', sans-serif;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+html {
+  background-color: var(--primary-light);
+    scroll-behavior: smooth;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+    background: var(--primary-dark);
+    border-radius: 999px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: var(--hairline);
+    border-radius: 999px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--hairline);
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+  border-radius: 999px;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: var(--text-tertiary);
+  border-radius: 999px;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
