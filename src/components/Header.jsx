@@ -55,10 +55,10 @@ function Header() {
                     <p className="text-(--tertiary-accent) text-[0.65rem] xs:text-[0.75rem] tracking-[0.2em]">NATURALS</p>
                 </NavLink>
                 <nav className="hidden tablet:flex items-center gap-10 font-body text-[0.95rem] text-(--secondary-dark)">
-                    <a href="/#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
-                    <a href="/#why-velora" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Why Velora</a>
-                    <a href="/#ingredients" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Ingredients</a>
-                    <a href="/#shop" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Shop</a>
+                    <a href="#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
+                    <a href="#why-velora" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Why Velora</a>
+                    <a href="#ingredients" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Ingredients</a>
+                    <a href="#shop" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Shop</a>
                 </nav>
                 <div className="flex justify-center items-center gap-4 tablet:gap-6 text-(--secondary-dark)">
                     <button className="hidden tablet:flex hover:text-(--tertiary-accent) transition-all cursor-pointer">
@@ -74,10 +74,10 @@ function Header() {
 
                 </div>
                 <nav className="w-full flex flex-col items-start gap-6 font-body text-[1rem] text-(--secondary-dark)">
-                    <a onClick={()=> setSidebarOpen(false)} href="/#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
-                    <a onClick={()=> setSidebarOpen(false)} href="/#why-velora" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Why Velora</a>
-                    <a onClick={()=> setSidebarOpen(false)} href="/#ingredients" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Ingredients</a>
-                    <a onClick={()=> setSidebarOpen(false)} href="/#shop" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Shop</a>
+                    <a onClick={()=> setSidebarOpen(false)} href="#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
+                    <a onClick={()=> setSidebarOpen(false)} href="#why-velora" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Why Velora</a>
+                    <a onClick={()=> setSidebarOpen(false)} href="#ingredients" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Ingredients</a>
+                    <a onClick={()=> setSidebarOpen(false)} href="#shop" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Shop</a>
                 </nav>
             </aside>
         </>
