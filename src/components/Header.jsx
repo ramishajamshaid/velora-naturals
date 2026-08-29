@@ -46,11 +46,11 @@ function Header() {
                     onClick={()=>setSidebarOpen(!isSidebarOpen)}
                     className="flex tablet:hidden text-(--secondary-dark) hover:text-(--tertiary-accent) transition-all cursor-pointer"
                 >
-                    {isSidebarOpen? (<Menu />): (<X/>)}
+                    {isSidebarOpen? (<X />): (<Menu/>)}
                 </button>
                 <NavLink to='/' className="flex flex-col justify-center items-center leading-5 xs:leading-6 mt-2 font-body">
-                    <h1 className="text-(--secondary-dark) text-[1.2rem] xs:text-[1.8rem] tracking-[0.25em] font-serif font-extralight">VELORA</h1>
-                    <p className="text-(--tertiary-accent) text-[0.6rem] xs:text-[0.75rem] tracking-[0.2em]">NATURALS</p>
+                    <h1 className="text-(--secondary-dark) text-[1.3rem] xs:text-[1.8rem] tracking-[0.25em] font-serif font-extralight">VELORA</h1>
+                    <p className="text-(--tertiary-accent) text-[0.7rem] xs:text-[0.8rem] tracking-[0.2em]">NATURALS</p>
                 </NavLink>
                 <nav className="hidden tablet:flex items-center gap-10 font-body text-[0.95rem] text-(--secondary-dark)">
                     <a href="/#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
@@ -67,15 +67,15 @@ function Header() {
                     </button>
                 </div>
             </header>
-            <aside className={`block tablet:hidden min-h-screen w-60 fixed z-20 top-28 ${isSidebarOpen?"-left-60": "left-0"} bg-(--secondary-light) p-4 transition-all duration-150 ease-in-out`}>
+            <aside className={`block tablet:hidden min-h-screen w-64 fixed z-20 top-28 ${isSidebarOpen?"left-0": "-left-68"} bg-(--secondary-light) p-4 transition-all duration-150 ease-in-out`}>
                 <div>
 
                 </div>
-                <nav className="w-full flex flex-col items-start gap-6 font-body text-[0.95rem] text-(--secondary-dark)">
-                    <a onClick={()=> setSidebarOpen(!isSidebarOpen)} href="/#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
-                    <a onClick={()=> setSidebarOpen(!isSidebarOpen)} href="/#why-velora" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Why Velora</a>
-                    <a onClick={()=> setSidebarOpen(!isSidebarOpen)} href="/#ingredients" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Ingredients</a>
-                    <a onClick={()=> setSidebarOpen(!isSidebarOpen)} href="/#shop" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Shop</a>
+                <nav className="w-full flex flex-col items-start gap-6 font-body text-[1rem] text-(--secondary-dark)">
+                    <a onClick={()=> setSidebarOpen(false)} href="/#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
+                    <a onClick={()=> setSidebarOpen(false)} href="/#why-velora" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Why Velora</a>
+                    <a onClick={()=> setSidebarOpen(false)} href="/#ingredients" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Ingredients</a>
+                    <a onClick={()=> setSidebarOpen(false)} href="/#shop" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">Shop</a>
                 </nav>
             </aside>
         </>
