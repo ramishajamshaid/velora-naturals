@@ -19,10 +19,12 @@
 
     --primary-light: #f5eee0;
     --secondary-light: #f5e9d5;
+    --secondary-light-100: #edd8b5b9;
+    --tertiary-light: #c7d3aa63;
 
     --primary-accent-100: #C6A15B;
     --primary-accent-200: #8C6B2E;
-    --secondary-accent: #606a49;
+    --secondary-accent: #707e4b;
     --tertiary-accent: #46512E;
     --sandy-accent: #947950;
     --sandy-accent-100: #bda279;

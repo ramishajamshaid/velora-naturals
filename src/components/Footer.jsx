@@ -13,21 +13,19 @@ function Footer() {
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center gap-5">
+                <div className="flex flex-col xs:flex-row items-center gap-3 xs:gap-6">
                     <a
                         href="#"
                         className="text-sm text-(--secondary-dark) transition-opacity hover:opacity-70"
                     >
                         Privacy Policy
                     </a>
-                    <div className="bg-(--text-dark-muted) w-[1.3px] h-4 rounded-sm"></div>
                     <a
                         href="#"
                         className="text-sm text-(--secondary-dark) transition-opacity hover:opacity-70"
                     >
                         Terms of Service
                     </a>
-                    <div className="bg-(--text-dark-muted) w-[1.3px] h-4 rounded-sm"></div>
                     <a
                         href="#"
                         className="text-sm text-(--secondary-dark) transition-opacity hover:opacity-70"
