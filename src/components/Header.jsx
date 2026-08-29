@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Menu, X, Sprout, FlaskConical, Rabbit, Sparkles } from 'lucide-react'
 import { NavLink } from "react-router-dom";
+import favicon from '../assets/favicon.png'
 
 const features = [
     {
@@ -41,7 +42,7 @@ function Header() {
                     }
                 </div>
             </div>
-            <header className="max-w-350 mx-auto h-18 bg-(--primary-light) flex justify-between items-center w-full py-3 px-6 tablet:px-8">
+            <header className="max-w-350 mx-auto h-20 bg-(--primary-light) flex justify-between items-center w-full py-3 px-6 tablet:px-8">
                 <button 
                     onClick={()=>setSidebarOpen(!isSidebarOpen)}
                     className="flex tablet:hidden text-(--secondary-dark) hover:text-(--tertiary-accent) transition-all cursor-pointer"
@@ -49,8 +50,9 @@ function Header() {
                     {isSidebarOpen? (<X />): (<Menu/>)}
                 </button>
                 <NavLink to='/' className="flex flex-col justify-center items-center leading-5 xs:leading-6 mt-2 font-body">
+                    <img src={favicon} alt='velora' className="w-6 h-6 object-contain"/>
                     <h1 className="text-(--secondary-dark) text-[1.3rem] xs:text-[1.8rem] tracking-[0.25em] font-serif font-extralight">VELORA</h1>
-                    <p className="text-(--tertiary-accent) text-[0.7rem] xs:text-[0.8rem] tracking-[0.2em]">NATURALS</p>
+                    <p className="text-(--tertiary-accent) text-[0.65rem] xs:text-[0.75rem] tracking-[0.2em]">NATURALS</p>
                 </NavLink>
                 <nav className="hidden tablet:flex items-center gap-10 font-body text-[0.95rem] text-(--secondary-dark)">
                     <a href="/#about-us" className="hover:text-(--tertiary-accent) transition-all cursor-pointer">About us</a>
@@ -67,7 +69,7 @@ function Header() {
                     </button>
                 </div>
             </header>
-            <aside className={`block tablet:hidden min-h-screen w-64 fixed z-20 top-28 ${isSidebarOpen?"left-0": "-left-68"} bg-(--secondary-light) p-4 transition-all duration-150 ease-in-out`}>
+            <aside className={`block tablet:hidden min-h-screen w-64 fixed z-20 top-30 ${isSidebarOpen?"left-0": "-left-68"} bg-(--secondary-light) p-4 transition-all duration-150 ease-in-out`}>
                 <div>
 
                 </div>
